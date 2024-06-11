@@ -1,0 +1,55 @@
+.light-theme {
+    background-color: whitesmoke;
+    color: rgb(54, 54, 54);
+}
+
+.dark-theme {
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
+}
+
+.navbar-light-theme {
+    background-color: whitesmoke !important;
+    color: rgb(54, 54, 54);
+}
+
+.navbar-dark-theme {
+    background-color: rgb(54, 54, 54) !important;
+    color: rgb(255, 255, 255);
+}
+
+.theme-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.theme-toggle:active {
+    transform: rotate(180deg);
+}
+
+.theme-toggle:focus {
+    outline: none;
+}
+
+.sun,
+.moon {
+    transition: transform 0.3s;
+}
+
+.navbar-light-theme img.svg-icon {
+    filter: invert(0);
+}
+
+.navbar-dark-theme img.svg-icon {
+    filter: invert(1);
+}
