@@ -89,7 +89,7 @@ const NavBar = () => {
                             rel="noopener noreferrer"
                         >
                             <img
-                                src="/src/assets/linkedin.svg"
+                                src="/svg/linkedin.svg"
                                 alt="linkedin"
                                 className="svg-icon"
                                 style={{ width: "25px" }}
@@ -101,7 +101,7 @@ const NavBar = () => {
                             rel="noopener noreferrer"
                         >
                             <img
-                                src="/src/assets/github.svg"
+                                src="/svg/github.svg"
                                 alt="github"
                                 className="svg-icon"
                                 style={{ width: "25px" }}
@@ -109,7 +109,7 @@ const NavBar = () => {
                         </Nav.Link>
                         <Nav.Link href="/CV Lucas Berardi en español.pdf" download>
                             <img
-                                src="/src/assets/cv.svg"
+                                src="/svg/cv.svg"
                                 alt="cv"
                                 className="svg-icon"
                                 style={{ width: "25px" }}
@@ -124,14 +124,14 @@ const NavBar = () => {
                 >
                     {theme === dark_theme ? (
                         <img
-                            src="/src//assets/sun.svg"
+                            src="/svg/sun.svg"
                             alt="sun"
                             className="sun svg-icon"
                             style={{ width: "30px", height: "30px" }}
                         />
                     ) : (
                         <img
-                            src="/src//assets/moon.svg"
+                            src="/svg/moon.svg"
                             alt="moon"
                             className="moon svg-icon"
                             style={{ width: "30px", height: "30px" }}
