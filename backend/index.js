@@ -25,11 +25,13 @@ app.use(express.json());
 app.use("/api", router);
 
 // Archivos estaticos desde React frontend app
-app.use(express.static(path.join(__dirname, "../frontend/dist", "index.html")));
+const distPath = path.join(__dirname, "../frontend/dist");
+app.use(express.static(distPath));
+console.log(distPath);
 
 // Redirige todas las demás rutas al archivo index.html del frontend
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/dist", "index.html"));
+    res.sendFile(path.join(distPath, "index.html"));
 });
 
 // Server
