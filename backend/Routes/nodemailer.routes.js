@@ -12,7 +12,7 @@ router.post("/enviar-correo", async (req, res) => {
                 .send(`Por favor llene todos los campos del formulario!`);
         }
         const result = await sendMail(nombre, email, mensaje);
-        res.send(result);
+        res.send({message: result});
     } catch (error) {
         //console.error(error)
         res.status(500).send(`Error en el servidor`)
