@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "build:frontend": "npm run build --prefix ../frontend",
+    "start": "npm run build:frontend && node index.js"
   },
-  "keywords": [],
+    "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
