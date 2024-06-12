@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware para CORS
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://portfolio-14dl.onrender.com"],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }));

@@ -3,7 +3,7 @@ import sendMail from "../config/nodemailer.js";
 
 const router = express.Router();
 
-router.post("/enviar-correo", (req, res) => {
+router.post("/enviar-correo", async (req, res) => {
     try {
         const { nombre, email, mensaje } = req.body;
         if (!nombre || !email || !mensaje) {
@@ -11,7 +11,7 @@ router.post("/enviar-correo", (req, res) => {
                 .status(400)
                 .send(`Por favor llene todos los campos del formulario!`);
         }
-        const result = sendMail(nombre, email, mensaje);
+        const result = await sendMail(nombre, email, mensaje);
         res.send(result);
     } catch (error) {
         //console.error(error)

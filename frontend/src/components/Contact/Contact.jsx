@@ -12,12 +12,12 @@ const Contact = () => {
     const [nombre, setNombre] = useState("");
     const [email, setEmail] = useState("");
     const [mensaje, setMensaje] = useState("");
+
+    const API_URL = 'https://portfolio-14dl.onrender.com/api/enviar-correo'
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(
-                "http://localhost:3000/api/enviar-correo",
-                {
+            const response = await fetch(API_URL, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
