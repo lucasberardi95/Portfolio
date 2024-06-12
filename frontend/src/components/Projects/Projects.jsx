@@ -83,7 +83,7 @@ const Projects = () => {
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="me-2"
-                                                variant="secondary"
+                                                variant="dark"
                                             >
                                                 Web
                                             </Button>
@@ -92,7 +92,7 @@ const Projects = () => {
                                             href={project.codeUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            variant="secondary"
+                                            variant="dark"
                                         >
                                             {"</>"}
                                         </Button>

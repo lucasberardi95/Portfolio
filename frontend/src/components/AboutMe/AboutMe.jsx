@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
+import "./AboutMe.css";
 const AboutMe = () => {
     const conocimientos = [
         { src: "/img/excel.png", alt: "EXCEL" },
@@ -51,22 +51,24 @@ const AboutMe = () => {
                         de utilidad para quien me brinde la oportunidad.
                     </p>
                 </Col>
-                <Col md={5} className="text-center">
+                <Col md={5} className="text-center mx-auto">
                     <img
-                        src='/img/foto-perfil.png'
+                        src="/img/foto-perfil.png"
                         alt="foto"
-                        style={{ width: "350px" }}
+                        style={{ width: "100%", height: "auto" }}
                     />
                 </Col>
             </Row>
+            <Row className="text-center mt-5 mb-5">
+                <Col>
+                    <h2>Conocimientos:</h2>
+                </Col>
+            </Row>
             <Row>
-                <div>
-                    <h2 className="text-center m-5">Conocimientos:</h2>
-                </div>
                 {conocimientos.map((conocimiento, index) => (
                     <Col
                         key={index}
-                        xs={6}
+                        xs={4}
                         sm={3}
                         md={2}
                         lg={1}

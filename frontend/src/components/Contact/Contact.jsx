@@ -77,7 +77,7 @@ const Contact = () => {
                     </Form.Group>
                 </Row>
                 <div className="text-center">
-                    <Button variant="primary" type="submit">
+                    <Button variant="dark" type="submit">
                         Enviar
                     </Button>
                 </div>
