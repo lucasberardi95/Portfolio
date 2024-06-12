@@ -25,11 +25,11 @@ const Contact = () => {
                     body: JSON.stringify({ nombre, email, mensaje }),
                 }
             );
-            if(!response){
-                throw new error(`Error al enviar mensaje!`)
+            if(!response.ok){
+                throw new Error(`Error al enviar mensaje!`)
             }
             const result = await response.json();
-            toast.success(`Mensaje enviado con exito!`);
+            toast.success(result.message || `Mensaje enviado con exito!`);
         } catch (error) {
             //console.error("Error:", error);
             toast.error(`Error al enviar mensaje!`);
