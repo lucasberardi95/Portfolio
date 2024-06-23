@@ -37,7 +37,7 @@ const Projects = () => {
             imgUrl: "/img/bancolb-img.jpg",
             liveUrl: "",
             codeUrl:
-                "https://github.com/lucasberardi95/BackendCoder-EntregaFinal.git",
+                "https://drive.google.com/drive/u/0/folders/1BjMz1WvA5PyraKUA7W56xPc3ihxNw4Rn",
         },
     ];
 
