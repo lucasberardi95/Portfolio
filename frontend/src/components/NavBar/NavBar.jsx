@@ -107,7 +107,7 @@ const NavBar = () => {
                                 style={{ width: "25px" }}
                             />
                         </Nav.Link>
-                        <Nav.Link href="/CV Lucas Berardi en español.pdf" download>
+                        <Nav.Link href="/CV Berardi Lucas.pdf" download>
                             <img
                                 src="/svg/cv.svg"
                                 alt="cv"
